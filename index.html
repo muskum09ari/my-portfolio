@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/styles.css"  rel="stylesheet">
+  <script src="js/resp.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCHKwG1BJFcdCVS9lvb6tPlW98_Qnyaz7w",
+      authDomain: "portfolio-c8fca.firebaseapp.com",
+      projectId: "portfolio-c8fca",
+      storageBucket: "portfolio-c8fca.appspot.com",
+      messagingSenderId: "120230423228",
+      appId: "1:120230423228:web:aa2738ebd8a77ddb73feb9",
+      measurementId: "G-PX57M03E8Y"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script> 
+
+</head>
+<body>
+  <div class="welcome-section">
+    <h1>WELCOME TO MY PORTFOLIO</h1>
+    <p>My name is Muskan Kumari and I am an altruistic person. I am hellbent and industrious person.I'm passionate about the technologies and I will give you the glimpse about some technologies that you can impegrante into.</p>
+    <a href="#projects" class="btn">View my work</a>
+</div>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience-block">
+    <h3>College- Chandigarh group Of Colleges</h3>
+    
+    <p>Undergraduation</p>
+  </div>
+  
+  <div class="experience-block">
+    <h3>Bosch India</h3>
+    
+  </div>
+</section>
+<section id="blog">
+  <h2>My Blogs</h2>
+  <article>
+    <h3>RPA & Salesforce</h3>
+    <p>there are many things</p>
+    <a href="#">Read More</a>
+  </article>
+  <article>
+    <h3>Creativity</h3>
+    <p>heya this my thoughts.</p>
+    <a href="#">Read More</a>
+  </article>
+  <article>
+    <h3>Health and Life</h3>
+    <p>Showcasing my website.</p>
+    <a href="#">Read More</a>
+  </article>
+</section>
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="service" id="RPA Services">
+    <h3>UiPath RPA Services</h3>
+    <p>want to learn Uipath quickly I will help you</p>
+    <button class="btn-learn-more" onclick="showMore('RPA Services')">Learn More</button>
+    <div class="more-info" id="more-info-1">
+      <p>Additional information about RPA services.</p>
+    </div>
+  </div>
+  <div class="Salesforce" id="service-2">
+    <h3>Salesforce</h3>
+    <p>Want to learn CRM itrs place for you</p>
+    <button class="btn-learn-more" onclick="showMore('service-2')">Learn More</button>
+    <div class="more-info" id="more-info-2">
+      <p>Additional information about Salesforce.</p>
+    </div>
+  </div>
+  <div class="PCOS/PCOD issues" id="service-3">
+    <h3>PCOS/PCOD issues</h3>
+    <p>I can help you in this.</p>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    <button type="submit" id="submit-btn">Send</button>
+  </form>
+
+      <div id="contact-info">
+        <p>Email: <a href="mailto:muskankumari@gmail.com">muskankumari@gmail.com</a></p>
+        <p>Phone: 9306848438</p>
+        <p>INDIA</p>
+      </div>
+    </section>
+    
+
+    <!----for social media link section ---->
+<section id="social-media-links">
+  <h2>Connect with me</h2>
+  <div id="social-links">
+    <a href="#" class="social-link">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="#" class="social-link">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="#" class="social-link">
+      <i class="fa fa-twitter"></i>
+    </a>
+    <a href="#" class="social-link">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
